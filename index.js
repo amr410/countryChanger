@@ -6,7 +6,7 @@ console.log(sections);
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    remove();
+    hide();
     sections.forEach((section) => {
       if (btn.innerText == section.dataset.country) {
         section.classList.remove("d-none");
@@ -15,10 +15,10 @@ btns.forEach((btn) => {
   });
 });
 _remove.addEventListener("click", () => {
-  remove();
+  hide();
 });
 
-function remove() {
+function hide() {
   sections.forEach((section) => {
     section.classList.add("d-none");
   });
