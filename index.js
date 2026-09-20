@@ -15,9 +15,7 @@ btns.forEach((btn) => {
   });
 });
 _remove.addEventListener("click", () => {
-  sections.forEach((section) => {
-    remove();
-  });
+  remove();
 });
 
 function remove() {
